@@ -4,11 +4,233 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- logo images icon -->
+    <link rel="icon" type="image/jpg" href="./imgs/favicon.jpg" />
+
     <title>Sachin</title>
   </head>
   <body>
-    <h1>My Portfolio</h1>
+    <header>
+      <a href="#" class="logo-holder"
+        ><div class="logo">L</div>
+        <div class="logo-text">Portfolio website</div></a
+      >
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Skills</a>
+          </li>
+          <li>
+            <a href="#">projects</a>
+          </li>
+          <li>
+            <a href="#" class="button">Contact Me</a>
+          </li>
+        </ul>
+        <a href="#" class="mobile-toggle" onClick="toggleMobileMenu()">
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M5 7h14M5 12h14M5 17h14"
+            />
+          </svg>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero container">
+        <div class="hero-blue">
+          <div>
+            <h1>
+              <small>Hi I'm</small>
+              sachin kuravan
+            </h1>
+            <p>
+              Design and Developer in India who creates educational content on
+              Youtube to teach others about HTML, CSS and Javascript.
+              <span
+                >I'm intreseted in AI topics which is why I also add things ike
+                ChatGPT into my projects these days.</span
+              >
+            </p>
+            <div class="call-to-action">
+              <a href="#" class="button black">View Resume</a>
+              <a href="#" class="button white">Contact Me</a>
+            </div>
+            <div class="social-links">
+              <a href="#"
+                ><img src="./imgs/github.png" alt="GitHub" width="48"
+              /></a>
+              <a href="#"
+                ><img src="./imgs/linkedin.png" alt="Linkedin" width="48"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-yellow">
+          <img src="./imgs/hero-image.png" alt="sachin" width="100%" />
+        </div>
+      </section>
+      <section class="logos container">
+        <div class="marquee">
+          <div class="track">
+            <img src="./imgs/html.png" alt="HTML" width="128" />
+            <img src="./imgs/css.png" alt="CSS" width="128" />
+            <img src="./imgs/javascript.png" alt="Javascript" width="128" />
+            <img src="./imgs/sass.png" alt="SASS" width="128" />
+            <img src="./imgs/react.png" alt="React" width="128" />
+            <img src="./imgs/nextjs.png" alt="Next JS" width="128" />
+            <img src="./imgs/azure.png" alt="Asure" width="128" />
+            <img src="./imgs/vscode.png" alt="VScode" width="128" />
+            <img src="./imgs/python.png" alt="Python" width="128" />
+            <img src="./imgs/html.png" alt="HTML" width="128" />
+            <img src="./imgs/css.png" alt="CSS" width="128" />
+            <img src="./imgs/javascript.png" alt="Javascript" width="128" />
+            <img src="./imgs/sass.png" alt="SASS" width="128" />
+            <img src="./imgs/react.png" alt="React" width="128" />
+            <img src="./imgs/nextjs.png" alt="Next JS" width="128" />
+            <img src="./imgs/azure.png" alt="Asure" width="128" />
+            <img src="./imgs/vscode.png" alt="VScode" width="128" />
+            <img src="./imgs/python.png" alt="Python" width="128" />
+          </div>
+        </div>
+      </section>
+      <section class="skills">
+        <h2><small>About Me</small>skills</h2>
+        <div class="holder-blue">
+          <div class="left-column">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Angular</li>
+              <li>React</li>
+              <li>Vue</li>
+            </ul>
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>Ruby</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+          <div class="right-column">
+            <h3>A Bit about me</h3>
+            <p>
+              Hi I'm Sachin, a Design and Developer in India who creates
+              educational content on Youtube to teach others about HTML, CSS and
+              Javascript. I'm intreseted in AI topics which is why I also add
+              things ike ChatGPT into my projects these days!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+              voluptatem exercitationem ut facere autem illo obcaecati
+              dignissimos eos repellat sapiente provident doloribus odio dolorum
+              neque minus, quasi debitis modi ullam. Quos, sunt architecto.
+              Corporis, cum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="work-experience container">
+        <h2><small>Recent </small> Work Experience</h2>
+        <div class="jobs">
+          <article>
+            <figure>
+              <div>
+                <img
+                  src="./imgs/workplace-1.jpg"
+                  alt="workplace 1 - YouTube Creater"
+                  width="100%"
+                />
+                <figcaption>workplace - YouTube Creator</figcaption>
+              </div>
+            </figure>
+            <h3>YouTube Creater</h3>
+            <div>2021-2022</div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+              magnam quo eos quasi velit nostrum?
+            </p>
+          </article>
+          <article>
+            <figure>
+              <div>
+                <img
+                  src="./imgs/workplace-2.jpg"
+                  alt="workplace 2 - Developer"
+                  width="100%"
+                />
+                <figcaption>workplace - Developer</figcaption>
+              </div>
+            </figure>
+            <h3>Developer</h3>
+            <div>2022-2023</div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse et,
+              maxime quae natus vel pariatur.
+            </p>
+          </article>
+          <article>
+            <figure>
+              <div>
+                <img
+                  src="./imgs/workplace-3.jpg"
+                  alt="workplace - 3"
+                  width="100%"
+                />
+                <figcaption>Technical Engineer</figcaption>
+              </div>
+            </figure>
+            <h3>Technical Engineer</h3>
+            <div>2023-2024</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              quasi quisquam atque placeat natus deserunt?
+            </p>
+          </article>
+        </div>
+      </section>
 
+      <section class="bento">
+        <h2>
+          <small>Previous</small>
+          Completed Projects
+        </h2>
+        <div class="bento-grid">
+          <div class="bento-item">1</div>
+          <div class="bento-item">2</div>
+          <div class="bento-item">3</div>
+          <div class="bento-item">4</div>
+          <div class="bento-item">5</div>
+          <div class="bento-item">6</div>
+        </div>
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

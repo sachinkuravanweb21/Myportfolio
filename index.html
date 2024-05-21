@@ -28,13 +28,15 @@
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#">projects</a>
+            <a href="#projects">projects</a>
           </li>
           <li>
-            <a href="#" class="button">Contact Me</a>
+            <a href="mailto:sachinkuravanweb21@gmail.com" class="button"
+              >Contact Me</a
+            >
           </li>
         </ul>
         <a href="#" class="mobile-toggle" onClick="toggleMobileMenu()">
@@ -74,8 +76,10 @@
               >
             </p>
             <div class="call-to-action">
-              <a href="#" class="button black">View Resume</a>
-              <a href="#" class="button white">Contact Me</a>
+              <a href="./newresume.pdf" class="button black">View Resume</a>
+              <a href="mailto:sachinkuravanweb21@gmail.com" class="button white"
+                >Contact Me</a
+              >
             </div>
             <div class="social-links">
               <a href="#"
@@ -115,7 +119,7 @@
           </div>
         </div>
       </section>
-      <section class="skills">
+      <section id="skills" class="skills container">
         <h2><small>About Me</small>skills</h2>
         <div class="holder-blue">
           <div class="left-column">
@@ -216,18 +220,79 @@
         </div>
       </section>
 
-      <section class="bento">
+      <section id="projects" class="bento container">
         <h2>
           <small>Previous</small>
           Completed Projects
         </h2>
         <div class="bento-grid">
-          <div class="bento-item">1</div>
-          <div class="bento-item">2</div>
-          <div class="bento-item">3</div>
-          <div class="bento-item">4</div>
-          <div class="bento-item">5</div>
-          <div class="bento-item">6</div>
+          <a href="#" class="bento-item">
+            <img src="./imgs/bento-1.jpg" alt="BGCCI" width="100%" />
+          </a>
+          <a href="#" ="bento-item">
+            <img src="./imgs/bento-2.jpg" alt="Churhview" width="100%" />
+          </a>
+          <a href="#" class="bento-item">
+            <img src="./imgs/bento-3.jpg" alt="Harley" width="100%" />
+          </a>
+          <a href="#" class="bento-item">
+            <img src="./imgs/bento-4.jpg" alt="Bunbury" width="100%" />
+          </a>
+          <a href="#" class="bento-item">
+            <img src="./imgs/bento-5.jpg" alt="Running" width="100%" />
+          </a>
+          <a href="#" class="bento-item">
+            <img src="./imgs/bento-6.jpg" alt="School" width="100%" />
+          </a>
+        </div>
+      </section>
+      <section class="chatbot container">
+        <h2>
+          <small> Talk to me </small>
+          Chatbot
+        </h2>
+        <div class="chatbot-blue">
+          <div class="chat-info">
+            <h3>Azure AI Chatbot</h3>
+            <p>
+              I've put together a chatbot here which knowns all my skills, work
+              experience and has a copy of my CV/Resume. You can use it to ask
+              questions about me to get a better idea of who I am get a better
+              idea of who I am and what I've done
+            </p>
+            <p>
+              You can also download my resume here if you want to take a look at
+              it. I'm currently looking for new oppurtinities so if you have a
+              project you think I'd be good fit for, please get in touch!
+            </p>
+            <a href="./newresume.pdf" class="button black">Download Resume</a>
+          </div>
+          <div class="chat-box">
+            <div class="scroll-area">
+              <ul id="chat-log">
+                <li>
+                  <span class="avatar bot">AI</span>
+                  <div class="message">
+                    Hi, I'm a friendly chatbot that lets you interactive with
+                    this portfolio and CV. How can I help?
+                  </div>
+                </li>
+                <li>
+                  <span class="avatar user">User</span>
+                  <div class="message">
+                    I have a question to ask you about this resume
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="chat-message">
+              <input
+                type="text"
+                placeholder="Hey sachin, what skills are you best at?"
+              />
+              <button class="button black">Send</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
